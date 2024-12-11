@@ -1,10 +1,47 @@
-.principal {
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
+
+
+body {
+    text-align: center;
+    font-family: "Atma", system-ui;
+    background-color: black;
+    color: white;
+}
+
+.titulo {
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
-.img {
+.imagem-divisao {
     display: flex;
     justify-content: center;
+    margin-bottom: 15px;
+}
+
+.imagem-divisao img {
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.4), 0px 8px 15px rgba(255, 255, 255, 0.2);
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 20%;
+}
+
+.texto {
+    background-color: #202020;
+    margin: 15px;
+    padding: 8px;
+    border: 3px solid white;
+    border-radius: 10px;
+    transition: transform ease-out 0.5s;
+    transform: scale(1);
+}
+
+.texto:hover {
+    transform: scale(1.05);
+    border-color: goldenrod;
 }
